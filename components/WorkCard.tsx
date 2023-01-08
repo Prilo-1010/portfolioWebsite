@@ -1,0 +1,92 @@
+/* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+import styles from "../styles/Work.module.css";
+import styles2 from "../styles/Index.module.css";
+import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
+import { urlFor } from "../sanity";
+import { Button } from "./Button";
+import { useState } from "react";
+import Modal from "./Modal";
+import { useRouter } from "next/router";
+
+const WorkCard = ({ workItem }: any) => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = (e: boolean) => setClick(e);
+  let router = useRouter();
+
+  const idknow : number = parseInt(router.asPath.charAt(11));
+
+
+//  console.log(router.asPath.charAt(6))
+
+//   const pic = workItem[router.asPath.charAt(6)].image;
+
+
+  return (
+    <>
+      {workItem.map((project: any) => {
+        return (
+          <>
+            <div className={styles.workContainer} key={project.id}>
+              <img
+                className={styles.backgroundImage}
+                alt="pic"
+                src={urlFor(project.image).url()}
+              />
+              {click && idknow == project.id && (
+                <div key={idknow}>
+                  <Modal>
+                    <div className={styles.projectContainer}>
+                      <div className={styles.topLink}>
+                        <div className={styles.arrows}>
+                          <i className={styles.arrow}>
+                            <IoMdArrowDropleft />
+                          </i>
+                          <i className={styles.arrow}>
+                            <IoMdArrowDropright />
+                          </i>
+                        </div>
+                        <div className={styles.close}>
+                          <Link
+                            className={styles.closeWork}
+                            onClick={() => handleClick(false)}
+                            href="/work"
+                          >
+                            X
+                          </Link>
+                        </div>
+                      </div>
+                      <div className={styles.project}>
+                        <img
+                          className={styles.imgWork}
+                          alt="pic"
+                          src={urlFor(project.image).url()}
+                        />
+                      </div>
+                      <div className={styles.projectLink}>
+                        <Link
+                          style={{ color: "var(--white)" }}
+                          className={styles2.textHeader1}
+                          href={`${project.link}`}
+                        >
+                          {project.link}
+                        </Link>
+                      </div>
+                    </div>
+                  </Modal>
+                </div>
+              )}
+              <div onClick={() => handleClick(true)} className={styles.text}>
+                {/* <Link href={`work?${project.id}`}>View Inner</Link> */}
+                <Button link={`work?work=${project.id}`}>View Inner</Button>
+              </div>
+            </div>
+          </>
+        );
+      })}
+    </>
+  );
+};
+
+export default WorkCard;

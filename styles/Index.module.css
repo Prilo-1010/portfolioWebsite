@@ -1,0 +1,475 @@
+/* Navbar */
+.navbarContainer {
+  background-color: var(--myblack);
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 999;
+  opacity: 0.95;
+}
+
+.nav1 {
+  display: none;
+  text-align: center;
+  padding-top: 100px;
+  height: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar {
+  background-color: var(--myblack);
+  width: 100%;
+  z-index: 999;
+  transition: 0.5s ease-in-out;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 200px;
+  left: 0px;
+  padding: 20px;
+  transition: 0.5s;
+  filter: drop-shadow(0px 4px #000);
+}
+
+.links {
+  position: absolute;
+  margin: auto;
+  margin-right: 200px;
+  right: 0px;
+  padding: auto;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.active{
+  color: var(--yellow);
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  filter: drop-shadow(0px 4px #000);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: 1s;
+}
+
+.navLinksActive{
+  color: var(--white);
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  filter: drop-shadow(0px 4px #000);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: 1s;
+}
+.navLinks {
+  color: var(--white);
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  filter: drop-shadow(0px 4px #000);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.navLinks:hover{
+  opacity: 0.6;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+
+.socialLinks {
+  color: var(--white);
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  filter: drop-shadow(0px 4px #000);
+}
+
+.socialLinks:hover {
+  color: var(--yellow);
+  transition: 0.3s;
+  text-shadow: 0px 0px 20px var(--yellow);
+}
+.vertical {
+  border-left: 2px solid var(--yellow);
+  height: 50px;
+  margin: 5px;
+  filter: drop-shadow(0px 4px #000);
+  box-shadow: 0 0 6px 1px var(--yellow);
+  padding: 0px;
+}
+.vertical1 {
+  display: none;
+  transition: 0.5s;
+  box-shadow: 0 0 6px 1px var(--yellow);
+}
+
+.menuIcon {
+  display: none;
+  filter: drop-shadow(0px 4px #000);
+}
+
+@media screen and (max-width: 960px) {
+  .navLinksAct {
+    position: fixed;
+    background: var(--myblack);
+    color: var(--white);
+    left: 0;
+    top: 100px;
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 5px -2px var(--yellow);
+    justify-content: space-evenly;
+  }
+
+  .navLinksActOff {
+    position: fixed;
+    left: -1700px;
+    transition: 1s;
+    background: var(--myblack);
+    color: var(--white);
+    top: 100px;
+    opacity: 1;
+    transition: 3s;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 5px -2px var(--yellow);
+    justify-content: space-evenly;
+  }
+
+  .navLinksActive {
+    display: flex;
+    grid-template-columns: 1fr;
+    padding: 30px 0;
+    text-align: center;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 4px #000);
+  }
+
+  .menuIcon {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    cursor: pointer;
+    color: var(--white);
+    padding-left: 20px;
+    transition: 0.5s;
+  }
+
+  .vertical {
+    display: none;
+    transition: 0.5s;
+  }
+  .vertical1 {
+    display: block;
+    border-left: 2px solid var(--yellow);
+    height: 50px;
+    margin: 5px;
+    filter: drop-shadow(0px 4px #000);
+    transition: 0.5s;
+  }
+
+  .logo {
+    margin-left: 50px;
+    transition: 0.5s;
+  }
+
+  .links {
+    margin-right: 50px;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .logo {
+    margin-left: 10px;
+    transition: 0.5s;
+  }
+
+  .links {
+    margin-right: 10px;
+    transition: 0.5s;
+  }
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  text-align: center;
+  color: var(--white);
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 60px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: var(--myblack);
+}
+
+.footer1 {
+  display: flex;
+  text-align: center;
+  margin: 0;
+  height: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.horizontal {
+  border-top: 2px solid var(--yellow);
+  width:100%;
+  margin: 0px;
+  box-shadow: 0 0 6px 1px var(--yellow);
+  padding: 0px;
+}
+
+.vertical2 {
+  border-left: 2px solid var(--yellow);
+  height: 21px;
+  margin: 10px;
+  box-shadow: 0 0 6px 1px var(--yellow);
+}
+
+/* Others */
+.textHeader {
+  text-shadow: 0px 3.5px black;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 2;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.textHeader1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 2;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--white);
+  padding: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.textHeader1:active{
+  
+  color: var(--yellow);
+}
+
+.textSubHeader {
+  font-size: 36px;
+  font-weight: bold;
+  font-weight: 300;
+}
+
+.textSubHeader1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.textParagraph {
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+
+.otherPage {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding-top: 50px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .textHeader {
+    font-size: 25px;
+  }
+  .textHeader1 {
+    font-size: 20px;
+    padding: 10px;
+   
+  }
+
+  .textSubHeader {
+    text-shadow: 0px 3.5px black;
+    font-size: 32px;
+    margin: 2;
+  }
+
+  .textSubHeader1 {
+    text-shadow: 0px 3.5px black;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .textParagraph {
+    text-shadow: 0px 3.5px black;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 20px;
+  }
+
+  .otherPage {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logo {
+    margin-left: 10px;
+    transition: 0.5s;
+  }
+
+  .textHeader1 {
+    font-size: 20px;
+  }
+
+
+  .links {
+    margin-right: 10px;
+    transition: 0.5s;
+  }
+  .textParagraph {
+    text-shadow: 0px 3.5px black;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 20px;
+  }
+  .textHeader {
+    font-size: 20px;
+  }
+
+  .textSubHeader {
+    font-size: 25px;
+  }
+
+  .textSubHeader1 {
+    font-size: 22px;
+  }
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.svg {
+ width: 80%;
+ display: block;
+ margin: auto;
+ padding-top: 80px;
+ justify-content: center;
+ text-align: center;
+ align-items: center;
+ text-shadow: 0px 3.5px black;
+ filter: drop-shadow(0px 4px #000);
+}
+
+ .svg__character {
+  fill: var(--yellow);
+ }
+
+ .svg__character1 {
+  fill: var(--white);
+ }
+ 
+ .svg__line {
+  fill: none;
+  stroke: var(--white);
+  stroke-dasharray: 6;
+  stroke-width: 1;
+  stroke-linejoin: round;
+ }
+ 
+ .svg__dot {
+  fill: var(--yellow);
+ }
+
+ .svg__plane {
+  transform: translate(-6px, -11px) rotate(25deg);
+  fill: var(--yellow);
+  opacity: 0;
+ }
+ 
+ .svg__mask {
+  fill: none;
+  stroke: var(--myblack);
+  stroke-width: 10;
+  stroke-dasharray: 480;
+  stroke-dashoffset: 480;
+ }
+
+ .link {
+  width: 80%;
+  display: block;
+  margin: auto;
+  text-shadow: 0px 3.5px black;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+ 
+ }
+
+ .progressBarMain{
+   background-color: var(--myblack);
+   height: 2px;
+   position: sticky;
+   top: 100px;
+   left: 0;
+   z-index: 1;
+   width: 100%;
+ }
+
+
+ .progressBar {
+  height: 2px;
+  background-color: var(--yellow);
+  
+  box-shadow: 0 0 6px 1px var(--yellow);
+}
