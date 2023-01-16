@@ -21,9 +21,9 @@ const Navbar = () => {
     <>
       <div className={styles.navbarContainer}>
         <div className={styles.navbar}>
-          <div className={styles.logo}>
+          <Link href='/' className={styles.logo}>
             <Image src={image} width={60} height={60} alt="logo" />
-          </div>
+          </Link>
 
           <div className={styles.links}>
             <div onClick={handleClick}>

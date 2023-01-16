@@ -20,31 +20,21 @@ const Footer = () => {
         </div>
         <div className={styles2.contact}>
           <ContactCard
-            link="about"
+            link="mailto: loloprosper17@gmail.com"
             icon={<GrMail />}
             contact="loloprosper17@gmail.com"
           />
           <ContactCard
-            link="about"
+            link="tel: +27-69-229-7342"
             icon={<BsTelephoneFill />}
             contact="+27 692 229 7342"
           />
           <ContactCard
-            link="about"
+            link="https://www.linkedin.com/messaging/?&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BsoR6%2BZaHT3yjV%2FnqthMNQA%3D%3D"
             icon={<GrLinkedinOption />}
             contact="@prosperlolo"
           />
-          <ContactCard
-            link="about"
-            icon={<BsInstagram />}
-            contact="@lolo_prilo"
-          />
-          <ContactCard
-            link="about"
-            icon={<BsTwitter />}
-            contact="@ProsperLolo"
-          />
-          <ContactCard link="about" icon={<BsGithub />} contact="Prilo-1010" />
+         
         </div>
       </div>
       <div className={styles.footer1}>

@@ -9,6 +9,8 @@ import ButtonFilter from "../components/ButtonFilter";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import WorkCard from "../components/WorkCard";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const client = createClient({
   projectId: "a8osqt5d",
@@ -19,7 +21,10 @@ const client = createClient({
 });
 
 export const postQuery = `
-  *[_type == "projects" ]`;
+  *[_type == "projects" ]{
+    ...,
+    images[]->
+  }`;
 
 export async function getStaticProps() {
   const project = await client.fetch(postQuery);
@@ -32,11 +37,15 @@ export async function getStaticProps() {
 }
 
 const Work = ({ project }: any) => {
-//   const allCategories = ["All", "Logo", "Website", "App"];
-const allCategories = ["All", ...new Set(project.map((item: any) => item.type))];
+  //   const allCategories = ["All", "Logo", "Website", "App"];
+  const allCategories = [
+    "All",
+    ...new Set(project.map((item: any) => item.type)),
+  ];
   //
 
   console.log(allCategories);
+  console.log(project)
 
   const [work, setWork] = useState(project);
   const [buttons, setButtons] = useState(allCategories);
@@ -51,6 +60,11 @@ const allCategories = ["All", ...new Set(project.map((item: any) => item.type))]
     const filteredData = project.filter((item: any) => item.type === button);
     setWork(filteredData);
   };
+
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const router = useRouter();
 
   return (
     <>
@@ -68,15 +82,17 @@ const allCategories = ["All", ...new Set(project.map((item: any) => item.type))]
           <div>
             <h3 className={styles2.textHeader}>WORK</h3>
             <h1 className={styles2.textSubHeader}>
-              Myy Masterpiece Collection
+              My Masterpiece Collection
             </h1>
           </div>
         </div>
+
         <div className={styles.filters}>
           <ButtonFilter button={buttons} filter={filter} />
         </div>
+
         <div className={styles.portfolioMain}>
-          <WorkCard workItem={work}/>
+          <WorkCard workItem={work} />
         </div>
       </motion.div>
     </>

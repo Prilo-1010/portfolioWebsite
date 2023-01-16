@@ -15,17 +15,17 @@ const Main = ({ scroll }: any) => {
         <div className={styles.home1}>
           <h1
             style={{
-              fontSize: 48,
-              fontWeight: 800,
+              fontSize: 50,
+              fontWeight: 400,
               margin: 0,
               display: "flex",
-              paddingBottom: 30
+              paddingBottom: 5
             }}
             className={styles.center}
           >
             <AnimatedText text="Prosper Lolo" />
             <span className={styles.text1} style={{ color: "var(--yellow)" }}>
-              <AnimatedText text=". " />
+              <AnimatedText text=" ." />
             </span>
           </h1>
 
@@ -34,7 +34,7 @@ const Main = ({ scroll }: any) => {
               fontSize: 26,
               margin: 0,
               lineHeight: 2,
-              fontWeight: 600,
+              fontWeight: 300,
               display: "block",
             }}
           >
@@ -119,10 +119,10 @@ const Main = ({ scroll }: any) => {
               <h3
                 className={styles.text}
                 style={{
-                  fontSize: 24,
+                  fontSize: 20,
                   margin: 1,
                   paddingRight: 8,
-                  fontWeight: 400,
+                  fontWeight: 300,
                 }}
               >
                 <AnimatedText text="Instagram" />
@@ -141,10 +141,10 @@ const Main = ({ scroll }: any) => {
               <h3
                 className={styles.text}
                 style={{
-                  fontSize: 24,
+                  fontSize: 20,
                   margin: 1,
                   paddingLeft: 8,
-                  fontWeight: 400,
+                  fontWeight: 300,
                 }}
               >
                 <AnimatedText text="LinkedIn" />
@@ -160,10 +160,10 @@ const Main = ({ scroll }: any) => {
               <h3
                 className={styles.text}
                 style={{
-                  fontSize: 24,
+                  fontSize: 20,
                   margin: 1,
                   paddingRight: 8,
-                  fontWeight: 400,
+                  fontWeight: 300,
                 }}
               >
                 <AnimatedText text="Github" />
@@ -182,10 +182,10 @@ const Main = ({ scroll }: any) => {
               <h3
                 className={styles.text}
                 style={{
-                  fontSize: 24,
+                  fontSize: 20,
                   margin: 1,
                   paddingLeft: 8,
-                  fontWeight: 400,
+                  fontWeight: 300,
                 }}
               >
                 <AnimatedText text="Twitter" />

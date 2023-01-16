@@ -15,7 +15,7 @@ const Service = ({ id, refer }: any) => {
         <div className={styles.servicePage}>
           <div>
             <h3 className={styles2.textHeader}>SERVICES</h3>
-            <h1 className={styles2.textSubHeader}>What I Am Great At</h1>
+            <h1 className={styles2.textSubHeader}>What I Provide</h1>
             <p className={styles2.textParagraph}>
               I specialize in building various design domains and websites for
               individuals and small businesses. No need to settle for cheap
@@ -32,32 +32,32 @@ const Service = ({ id, refer }: any) => {
             title="UI/UX Design"
             project="8 projects completed"
             description="I value simple content structure, clean design patterns, and thoughtful interactions."
-            other="Design Tools: "
-            skills="Adobe XD, Adobe Express, Sketch, Pen and paper."
+            other="Design Tools:"
+            skills="Figma, Adobe AE, Pen and paper."
           />
           <ServiceCard
             icon={<FaReact />}
             title="Web Development"
             project="6 projects completed"
-            description="I like to code things from scratch, and enjoy bringing ideas to life in the browser."
+            description="I like to code things from scratch,  in both Frontend and Backend"
             other="Development Tools:"
-            skills="Adobe XD, Adobe Express, Sketch, Pen and paper."
+            skills="Visual Studio, Visual Studio Code, Github "
           />
           <ServiceCard
             icon={<CiMobile3 />}
             title="App Development"
             project="3 projects completed"
-            description="I like to code things from scratch, and enjoy bringing ideas to life in the browser.."
+            description="I create software programs for wireless devices such as smartphones, tablets and wearables."
             other="Development Tools:"
-            skills="Adobe XD, Adobe Express, Sketch, Pen and paper."
+            skills="VS Code, Expo, Android Studio, Firebase"
           />
           <ServiceCard
             icon={<GiPencilBrush />}
             title="Graphic Design"
             project="5 projects completed"
             description="I identify and produce visual concepts to communicate ideas that inspire, inform and captivate consumers."
-            other="Design Tools: "
-            skills="Adobe Illustrator, Canva."
+            other="Design Tools:"
+            skills="Adobe Illustrator, Adobe Photoshop, Figma"
           />
         </div>
 
@@ -71,17 +71,17 @@ const Service = ({ id, refer }: any) => {
               </p>
             </div>
             <div className={styles.stat}>
-              <h1 className={styles2.textSubHeader}>4.3mil</h1>
-              <h2 className={styles2.textHeader}>Views</h2>
+              <h1 className={styles2.textSubHeader}>20+</h1>
+              <h2 className={styles2.textHeader}>Projects</h2>
               <p className={styles2.textParagraph}>
-                Number of views our works have achieved in recent years.
+                Number of projects completed recent years.
               </p>
             </div>
             <div className={styles.stat}>
               <h1 className={styles2.textSubHeader}>4.9/5.0</h1>
               <h2 className={styles2.textHeader}>Rating</h2>
               <p className={styles2.textParagraph}>
-                The rating our customers give us, according to Google Reviews.
+                The rating our customers give us, according to Reviews.
               </p>
             </div>
           </div>

@@ -1,21 +1,46 @@
-import styles from "../styles/Work.module.css";
-import { useState } from "react";
+import {  useEffect, useState } from "react";
 
-const ButtonFilter = ({button, filter}:any) => {
-     //Fist state
-  const [click, setClick] = useState(false);
 
-  //state after
-  const handleClick = () => setClick(!click);
-    return (  
-        <div className={styles.workLinks} onClick={handleClick}>
-        {
-            button.map((cat: any, i:any)=>{
-                return <span key={i}  onClick={()=> filter(cat) } className={click ? styles.filterLinks: styles.filterLinksActive }> {cat}</span>
-            })
-        }
-    </div>
-    );
-}
- 
+const ButtonFilter = ({ button, filter }: any) => {
+  // type MyType = { id: number }
+  const [appState, changeState] = useState<any>({
+    activeObject: null,
+    objects: button
+  });
+
+  function toggleActive(index:any) {
+    changeState({...appState, activeObject: appState.objects[index]})
+  }
+
+  function toggleActiveStyles(index: any){
+     if(appState.objects[index] === appState.activeObject){
+      return "filterLinks active"
+     }else{
+      return "filterLinks inactive"
+     }
+     }
+
+     useEffect(()=>{
+      changeState({...appState, activeObject: appState.objects[0]})
+     },[])
+  
+  return (
+    <>
+      {appState.objects.map((elements: any, index: any) => (
+        <div key={index}  className="workLinks">
+          <span
+            className={toggleActiveStyles(index)}
+            onClick={() => {
+              toggleActive(index) ,filter(elements);
+            }}
+           
+          >
+            {elements}
+          </span>
+        </div>
+      ))}
+    </>
+  );
+};
+
 export default ButtonFilter;

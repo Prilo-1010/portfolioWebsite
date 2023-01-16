@@ -17,51 +17,10 @@
   padding-bottom: 30px;
 }
 
-.workLinks {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  list-style: none;
-  margin: auto;
-  padding: auto;
-  height: 60px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 70%;
-}
-
-.filters{
-  width: 70%;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: auto;
-  padding: auto;
-  margin-bottom: 50px;
-}
-
-.filterLinks {
-  color: var(--yellow);
-  padding: 0px;
-  font-size: 26px;
-  font-weight: 500;
-  filter: drop-shadow(0px 4px #000);
-  cursor: pointer;
-}
-
-.filterLinksActive{
-  color: var(--white);
-  padding: 0px;
-  font-size: 26px;
-  font-weight: 500;
-  filter: drop-shadow(0px 4px #000);
-  cursor: pointer;
-}
-
 .portfolioMain {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding-top: 20px;
   margin: auto;
 }
@@ -75,7 +34,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,17 +67,39 @@
   opacity: 0;
 }
 
+.filters{
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  margin-bottom: 50px;
+}
+
+
 @media screen and (max-width: 1290px) {
-  .workLinks {
+  .portfolioMain {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 10px;
+    margin: auto;
+  }
+  .filters{
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 1190px) {
-  .workLinks {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  .portfolioMain {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 10px;
+    margin: auto;
   }
 }
 
@@ -126,15 +107,11 @@
   .portfolioMain {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-top: 10px;
     margin: auto;
   }
-  .workLinks {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    width: 100%;
-  }
+
   .workContainer {
     width: 100%;
     height: 100%;
@@ -149,20 +126,20 @@
     align-items: center;
     justify-content: center;
   }
+
+  .filters{
+    width: 70%;
+  }
+  
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 720px) {
   .portfolioMain {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 10px;
     margin: auto;
-  }
-  .workLinks {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    width: 100%;
   }
   .workContainer {
     width: 100%;
@@ -178,12 +155,44 @@
     align-items: center;
     justify-content: center;
   }
+
+  .filters{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .portfolioMain {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+    margin: auto;
+  }
+  .workContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+    background-color: #202020d5;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .workPage{
+    width: 90%;
+  }
+  
 }
 
 /* Work ID */
 .projectContainer {
   width: fit-content;
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   align-items: center;
   margin: auto;
@@ -278,5 +287,24 @@ background-color: rgba(0, 0, 0, 0.811);
   display: flex;
 align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 60%;
+}
+
+@media screen and (max-width: 1280px) {
+  .dialogProp{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .dialogProp{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .dialogProp{
+    width: 90%;
+  }
+  
+  
 }

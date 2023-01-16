@@ -3,11 +3,14 @@ import Link from "next/link";
 import styles from "../styles/Work.module.css";
 import styles2 from "../styles/Index.module.css";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
+import {MdOutlineClose} from 'react-icons/md'
 import { urlFor } from "../sanity";
 import { Button } from "./Button";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Modal from "./Modal";
 import { useRouter } from "next/router";
+
+
 
 const WorkCard = ({ workItem }: any) => {
   const [click, setClick] = useState(false);
@@ -16,12 +19,7 @@ const WorkCard = ({ workItem }: any) => {
   let router = useRouter();
 
   const idknow : number = parseInt(router.asPath.charAt(11));
-
-
-//  console.log(router.asPath.charAt(6))
-
-//   const pic = workItem[router.asPath.charAt(6)].image;
-
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <>
@@ -40,34 +38,54 @@ const WorkCard = ({ workItem }: any) => {
                     <div className={styles.projectContainer}>
                       <div className={styles.topLink}>
                         <div className={styles.arrows}>
-                          <i className={styles.arrow}>
+                          <i className={styles.arrow} onClick={()=> {
+                              setCurrentIndex(currentIndex - 1)
+                            }} >
                             <IoMdArrowDropleft />
                           </i>
-                          <i className={styles.arrow}>
-                            <IoMdArrowDropright />
+                          <i className={styles.arrow} onClick={()=> {
+                              setCurrentIndex(currentIndex + 1)
+                            }}  >
+                            <IoMdArrowDropright/>
                           </i>
                         </div>
                         <div className={styles.close}>
-                          <Link
+                          <i
                             className={styles.closeWork}
                             onClick={() => handleClick(false)}
-                            href="/work"
+                          
                           >
-                            X
-                          </Link>
+                            <MdOutlineClose/>
+                          </i>
                         </div>
                       </div>
                       <div className={styles.project}>
+
+                      
+                        {  project.images.filter((item: any) => item.id === currentIndex).map((pic:any, index:any) => 
                         <img
-                          className={styles.imgWork}
-                          alt="pic"
-                          src={urlFor(project.image).url()}
-                        />
+                        className={styles.imgWork}
+                        alt="pic"
+                        key={pic._id}
+                        src={urlFor(pic.image).url()}
+                      />
+                        )}
+                      
+                      {/* {project.images.map((pic: any)=> (
+                             <img
+                             className={styles.imgWork}
+                             alt="pic"
+                             key={pic._id}
+                             src={urlFor(pic.image).url()}
+                           />
+                          ))
+                        } */}
+
                       </div>
                       <div className={styles.projectLink}>
                         <Link
                           style={{ color: "var(--white)" }}
-                          className={styles2.textHeader1}
+                          className={styles2.textParagraph}
                           href={`${project.link}`}
                         >
                           {project.link}
@@ -79,7 +97,7 @@ const WorkCard = ({ workItem }: any) => {
               )}
               <div onClick={() => handleClick(true)} className={styles.text}>
                 {/* <Link href={`work?${project.id}`}>View Inner</Link> */}
-                <Button link={`work?work=${project.id}`}>View Inner</Button>
+                <Button link={`work?work=${project.id}`}>View Work</Button>
               </div>
             </div>
           </>

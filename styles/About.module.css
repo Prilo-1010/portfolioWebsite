@@ -129,6 +129,7 @@
   margin: auto;
   justify-content: center;
   align-items: center;
+  
 }
 
 .skillInfo {
@@ -173,7 +174,7 @@
 }
 
 .css {
-  width: 82%;
+  width: 88%;
   animation: css 3s;
 }
 
@@ -183,12 +184,12 @@
   }
 
   100% {
-    width: 82%;
+    width: 88%;
   }
 }
 
 .javascript {
-  width: 77%;
+  width: 80%;
   animation: javascript 3s;
 }
 
@@ -198,12 +199,12 @@
   }
 
   100% {
-    width: 77%;
+    width: 80%;
   }
 }
 
 .react {
-  width: 70%;
+  width: 80%;
   animation: react 3s;
 }
 
@@ -213,31 +214,16 @@
   }
 
   100% {
-    width: 70%;
+    width: 80%;
   }
 }
 
-.node {
-  width: 65%;
-  animation: node 3s;
-}
-
-@keyframes node {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 65%;
-  }
-}
-
-.xd {
+.next {
   width: 75%;
-  animation: xd 3s;
+  animation: next 3s;
 }
 
-@keyframes xd {
+@keyframes next {
   0% {
     width: 0;
   }
@@ -247,8 +233,113 @@
   }
 }
 
+.native {
+  width: 70%;
+  animation: native 3s;
+}
+
+@keyframes native {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.express {
+  width: 75%;
+  animation: express 3s;
+}
+
+@keyframes express {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+.firebase {
+  width: 70%;
+  animation: firebase 3s;
+}
+
+@keyframes firebase {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.net {
+  width: 70%;
+  animation: net 3s;
+}
+
+@keyframes net {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.mongo {
+  width: 65%;
+  animation: mongo 3s;
+}
+
+@keyframes mongo {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+
+.sql {
+  width: 70%;
+  animation: sql 3s;
+}
+
+@keyframes sql {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.figma {
+  width: 80%;
+  animation: xd 3s;
+}
+
+@keyframes figma {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
 .illus {
-  width: 55%;
+  width: 65%;
   animation: illus 3s;
 }
 
@@ -258,16 +349,16 @@
   }
 
   100% {
-    width: 55%;
+    width: 65%;
   }
 }
 
-.angular {
+.photo {
   width: 60%;
-  animation: angular 3s;
+  animation: photo 3s;
 }
 
-@keyframes angular {
+@keyframes photo {
   0% {
     width: 0;
   }

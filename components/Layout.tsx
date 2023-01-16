@@ -4,6 +4,9 @@ import Navbar from "./Navbar";
 import { AnimatePresence } from "framer-motion";
 import ReactLoading from "react-loading";
 import { useRouter } from "next/router";
+import ScrollToTop from "react-scroll-to-top";
+import { IoMdArrowDropup } from "react-icons/io";
+import styles from "../styles/Index.module.css";
 
 const Layout = ({ children }: any) => {
   const router = useRouter();
@@ -35,7 +38,7 @@ const Layout = ({ children }: any) => {
           </div>
         )}
         <AnimatePresence>{children}</AnimatePresence>
-
+        <ScrollToTop className={styles.up} smooth component={<p style={{ color: "black", fontSize: 40, paddingTop: 8 }}><IoMdArrowDropup /></p>} />
         <Footer />
       </div>
     </>

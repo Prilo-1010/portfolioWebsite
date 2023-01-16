@@ -34,7 +34,7 @@ const Accordion = ({ title, paragraph }: any) => {
           </div>
         </div>
         <div className={click ? "none" : styles.accordionItemBody}>
-          <div className={styles.accordionItemBodyContent} style={{ fontWeight: 300 }}>{paragraph}</div>
+          <div className={styles.accordionItemBodyContent} style={{ fontWeight: 300 }}><h1 className={styles2.textParagraph}>{paragraph}</h1></div>
         </div>
       </div>
     </>
