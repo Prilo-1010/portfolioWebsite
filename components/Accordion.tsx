@@ -18,7 +18,7 @@ const Accordion = ({ title, paragraph }: any) => {
             click ? styles.accordionItemHeader1 : styles.accordionItemHeader
           }
         >
-          <h1 style={{ paddingLeft: 10 }} className={styles2.textSubHeader}>
+          <h1 style={{ paddingLeft: 10, fontWeight: 200 }} className={styles2.textSubHeader1}>
             {title}
           </h1>
           <div className={styles.sign} onClick={handleClick}>

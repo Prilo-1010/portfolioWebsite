@@ -34,7 +34,7 @@ const About = () => {
             <div className={styles.aboutInfo}>
               <h2 className={styles2.textSubHeader1}>Software Developer</h2>
               <p className={styles2.textParagraph}>
-                Im a Full-Stack Developer situated in South Africa. uve forever
+                Im a Full-Stack Developer situated in South Africa. I have forever
                 been somebody who has both an innovative and a consistent side.
                 At the point when I found website composition , I understood it
                 would be the ideal fit. I could utilize my inventive side to
@@ -133,16 +133,21 @@ const About = () => {
 
             <div className={styles.skillSet}>
               <Skills text="HTML" skill={styles.html} percent="90%" />
-              <Skills text="CSS" skill={styles.css} percent="88%" />
+              <Skills text="CSS/SCSS" skill={styles.css} percent="88%" />
               <Skills
                 text="Javascript"
                 skill={styles.javascript}
                 percent="80%"
               />
-
+              <Skills
+                text="Typescript"
+                skill={styles.express}
+                percent="75%"
+              />
               <Skills text="ReactJs" skill={styles.react} percent="80%" />
               <Skills text="NextJs" skill={styles.next} percent="75%" />
               <Skills text="React-Native" skill={styles.native} percent="70%" />
+              <Skills text="Angular" skill={styles.mongo} percent="65%" />
 
               <Skills text="ExpressJs" skill={styles.express} percent="75%" />
               <Skills text=".NET" skill={styles.net} percent="70%" />
@@ -160,8 +165,8 @@ const About = () => {
                 percent="60%"
               />
 
-              <Skills text="MySQL" skill={styles.sql} percent="70%" />
-              <Skills text="MongoDB" skill={styles.mongo} percent="65%" />
+              <Skills text="SQL/NoSQL" skill={styles.sql} percent="70%" />
+              
             </div>
           </div>
         </div>

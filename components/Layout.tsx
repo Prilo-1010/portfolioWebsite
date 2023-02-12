@@ -28,6 +28,7 @@ const Layout = ({ children }: any) => {
       router.events.off("routeChangeError", handleComplete);
     };
   });
+  
   return (
     <>
       <div>

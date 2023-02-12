@@ -30,7 +30,7 @@ const Service = ({ id, refer }: any) => {
           <ServiceCard
             icon={<SiFigma />}
             title="UI/UX Design"
-            project="8 projects completed"
+            project="6 projects completed"
             description="I value simple content structure, clean design patterns, and thoughtful interactions."
             other="Design Tools:"
             skills="Figma, Adobe AE, Pen and paper."
@@ -38,7 +38,7 @@ const Service = ({ id, refer }: any) => {
           <ServiceCard
             icon={<FaReact />}
             title="Web Development"
-            project="6 projects completed"
+            project="4 projects completed"
             description="I like to code things from scratch,  in both Frontend and Backend"
             other="Development Tools:"
             skills="Visual Studio, Visual Studio Code, Github "
@@ -46,7 +46,7 @@ const Service = ({ id, refer }: any) => {
           <ServiceCard
             icon={<CiMobile3 />}
             title="App Development"
-            project="3 projects completed"
+            project="2 projects completed"
             description="I create software programs for wireless devices such as smartphones, tablets and wearables."
             other="Development Tools:"
             skills="VS Code, Expo, Android Studio, Firebase"
@@ -64,14 +64,14 @@ const Service = ({ id, refer }: any) => {
         <div className={styles.statMainPage}>
           <div className={styles.statPage}>
             <div className={styles.stat}>
-              <h1 className={styles2.textSubHeader}>8+</h1>
+              <h1 className={styles2.textSubHeader}>3+</h1>
               <h2 className={styles2.textHeader}>Clients</h2>
               <p className={styles2.textParagraph}>
                 Number of customers who are satisfied with a completed project.
               </p>
             </div>
             <div className={styles.stat}>
-              <h1 className={styles2.textSubHeader}>20+</h1>
+              <h1 className={styles2.textSubHeader}>15+</h1>
               <h2 className={styles2.textHeader}>Projects</h2>
               <p className={styles2.textParagraph}>
                 Number of projects completed recent years.

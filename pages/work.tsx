@@ -44,8 +44,8 @@ const Work = ({ project }: any) => {
   ];
   //
 
-  console.log(allCategories);
-  console.log(project)
+  // console.log(allCategories);
+  // console.log(project)
 
   const [work, setWork] = useState(project);
   const [buttons, setButtons] = useState(allCategories);
