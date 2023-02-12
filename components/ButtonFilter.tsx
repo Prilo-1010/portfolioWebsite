@@ -22,7 +22,8 @@ const ButtonFilter = ({ button, filter }: any) => {
 
      useEffect(()=>{
       changeState({...appState, activeObject: appState.objects[0]})
-     },[])
+     // eslint-disable-next-line react-hooks/exhaustive-deps
+     },[ ])
   
   return (
     <>
