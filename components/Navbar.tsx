@@ -56,24 +56,28 @@ const Navbar = () => {
               <Link
                 className={styles.socialLinks}
                 href="https://www.instagram.com/lolo_prilo"
+                rel="noopener noreferrer" target="_blank"
               >
                 <BsInstagram />
               </Link>
               <Link
                 className={styles.socialLinks}
                 href="https://www.twitter.com/ProsperLolo"
+                rel="noopener noreferrer" target="_blank"
               >
                 <BsTwitter />
               </Link>
               <Link
                 className={styles.socialLinks}
                 href="https://www.linkedin.com/in/prosperlolo"
+                rel="noopener noreferrer" target="_blank"
               >
                 <GrLinkedinOption />
               </Link>
               <Link
                 className={styles.socialLinks}
                 href="https://github.com/Prilo-1010"
+                rel="noopener noreferrer" target="_blank"
               >
                 <BsGithub />
               </Link>

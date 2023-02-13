@@ -91,6 +91,7 @@ const WorkCard = ({ workItem }: any) => {
                           style={{ color: "var(--white)" }}
                           className={styles2.textParagraph}
                           href={`${project.link}`}
+                          rel="noopener noreferrer" target="_blank"
                         >
                           {project.link}
                         </Link>

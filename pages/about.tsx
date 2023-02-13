@@ -119,7 +119,8 @@ const About = () => {
               </h3>
 
               <div style={{ paddingTop: 15 }}>
-                <Button link="resume.pdf" download="resume.pdf">
+                <Button link="resume.pdf" download="resume.pdf" rel="noopener noreferrer" target="_blank">
+              
                   Download Resume
                 </Button>
               </div>

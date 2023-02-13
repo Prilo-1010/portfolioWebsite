@@ -252,7 +252,7 @@ const Main = ({ scroll }: any) => {
                   </div>
                 </div>
               </div>
-              <div className={styles.videoCon}>
+              {/* <div className={styles.videoCon}>
                 <div className={styles.videoOverlay}> </div>
                 <video autoPlay className={styles.video} muted loop>
                   <source src="./video4.mp4" type="video/mp4" />
@@ -262,7 +262,7 @@ const Main = ({ scroll }: any) => {
                     <Button link="work"> View More Work</Button>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </Carousel>
           </div>
         </motion.div>
