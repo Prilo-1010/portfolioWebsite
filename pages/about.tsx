@@ -79,7 +79,7 @@ const About = () => {
                 >
                   Email
                 </span>{" "}
-                : loloprosper17@gmail.com
+                : loloprosper4@gmail.com
               </h3>
               <h3 className={styles2.textParagraph}>
                 <span
