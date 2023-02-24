@@ -7,6 +7,9 @@ body {
 
   overflow-x: hidden;
   scroll-behavior: smooth;
+    color: white;
+    background: #0d0d0d;
+
 }
 :root {
   --black: #121212;
@@ -25,7 +28,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -33,7 +36,7 @@ a {
     color: white;
     background: #0d0d0d;
   }
-}
+} */
 .spinner-wrapper {
   height: 100vh;
   width: 100vw;
