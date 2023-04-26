@@ -34,7 +34,7 @@ const About = () => {
             <div className={styles.aboutInfo}>
               <h2 className={styles2.textSubHeader1}>Software Developer</h2>
               <p className={styles2.textParagraph}>
-                Im a Full-Stack Developer situated in South Africa. I have forever
+                I have forever
                 been somebody who has both an innovative and a consistent side.
                 At the point when I found website composition , I understood it
                 would be the ideal fit. I could utilize my inventive side to
@@ -49,7 +49,7 @@ const About = () => {
             <div className={styles.aboutPersonal}>
               <h2 className={styles2.textSubHeader1}>Personal Information</h2>
               <h3 className={styles2.textParagraph}>
-                <span style={{ fontWeight: 500 }}>Name</span> : Prosper Lolo
+                <span style={{ fontWeight: 500 }}>Name</span> : John Doe
               </h3>
               <h3 className={styles2.textParagraph}>
                 <span
@@ -59,7 +59,7 @@ const About = () => {
                 >
                   Age
                 </span>{" "}
-                : 21 years
+                : 25 years
               </h3>
               <h3 className={styles2.textParagraph}>
                 <span
@@ -79,7 +79,7 @@ const About = () => {
                 >
                   Email
                 </span>{" "}
-                : loloprosper4@gmail.com
+                : johndoe@gmail.com
               </h3>
               <h3 className={styles2.textParagraph}>
                 <span
@@ -89,14 +89,14 @@ const About = () => {
                 >
                   Phone
                 </span>{" "}
-                : (+27) 692 297 342
+                : 080 000 0000
               </h3>
 
               {click && (
                 <Modal>
                   <Image
                     onClick={() => handleClick(false)}
-                    src="/images/image2.jpeg"
+                    src="/images/pic.jpg"
                     width={400}
                     height={400}
                     alt="logo"
@@ -119,7 +119,7 @@ const About = () => {
               </h3>
 
               <div style={{ paddingTop: 15 }}>
-                <Button link="resume.pdf" download="resume.pdf" rel="noopener noreferrer" target="_blank">
+                <Button link="#" download="resume.pdf" rel="noopener noreferrer" target="_blank">
               
                   Download Resume
                 </Button>

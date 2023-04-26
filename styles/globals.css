@@ -37,6 +37,17 @@ a {
     background: #0d0d0d;
   }
 } */
+.gradient-02 {
+  position: absolute;
+  width: 200px;
+  height: 438px;
+  top: 0px;
+  right: 0px;
+
+  background: #7aebfb;
+  filter: blur(190px);
+}
+
 .spinner-wrapper {
   height: 100vh;
   width: 100vw;

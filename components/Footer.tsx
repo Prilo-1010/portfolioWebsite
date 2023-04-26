@@ -20,19 +20,19 @@ const Footer = () => {
         </div>
         <div className={styles2.contact}>
           <ContactCard
-            link="mailto: loloprosper4@gmail.com"
+            link="mailto: loloprosper17@gmail.com"
             icon={<GrMail />}
-            contact="loloprosper4@gmail.com"
+            contact="johndoe@gmail.com"
           />
           <ContactCard
             link="tel: +27-69-229-7342"
             icon={<BsTelephoneFill />}
-            contact="+27 692 229 7342"
+            contact="080 000 0000"
           />
           <ContactCard
-            link="https://www.linkedin.com/messaging/?&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BsoR6%2BZaHT3yjV%2FnqthMNQA%3D%3D"
+            link="www.google.com"
             icon={<GrLinkedinOption />}
-            contact="@prosperlolo"
+            contact="@johndoe"
           />
          
         </div>

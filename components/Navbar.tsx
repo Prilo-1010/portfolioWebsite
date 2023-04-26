@@ -55,28 +55,28 @@ const Navbar = () => {
             <div style={{paddingLeft:20}}>
               <Link
                 className={styles.socialLinks}
-                href="https://www.instagram.com/lolo_prilo"
+                href="https://www.google.com"
                 rel="noopener noreferrer" target="_blank"
               >
                 <BsInstagram />
               </Link>
               <Link
                 className={styles.socialLinks}
-                href="https://www.twitter.com/ProsperLolo"
+                href="https://www.google.com"
                 rel="noopener noreferrer" target="_blank"
               >
                 <BsTwitter />
               </Link>
               <Link
                 className={styles.socialLinks}
-                href="https://www.linkedin.com/in/prosperlolo"
+                href="https://www.google.com"
                 rel="noopener noreferrer" target="_blank"
               >
                 <GrLinkedinOption />
               </Link>
               <Link
                 className={styles.socialLinks}
-                href="https://github.com/Prilo-1010"
+                href="https://www.google.com"
                 rel="noopener noreferrer" target="_blank"
               >
                 <BsGithub />

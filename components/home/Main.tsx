@@ -23,7 +23,7 @@ const Main = ({ scroll }: any) => {
             }}
             className={styles.center}
           >
-            <AnimatedText text="Prosper Lolo" />
+            <AnimatedText text="John Doe" />
             <span className={styles.text1} style={{ color: "var(--yellow)" }}>
               <AnimatedText text=" ." />
             </span>
@@ -114,7 +114,7 @@ const Main = ({ scroll }: any) => {
           <div className={styles.center} style={{ display: "flex", paddingTop: 14 }}>
             <Link
               className={styles.socialLinks}
-              href="https://www.instagram.com/lolo_prilo"
+              href="#"
             >
               <h3
                 className={styles.text}
@@ -136,7 +136,7 @@ const Main = ({ scroll }: any) => {
             </h3>
             <Link
               className={styles.socialLinks}
-              href="https://www.linkedin.com/in/prosperlolo"
+              href="#"
             >
               <h3
                 className={styles.text}
@@ -155,7 +155,7 @@ const Main = ({ scroll }: any) => {
           <div className={styles.center} style={{ display: "flex", paddingTop: 12, paddingBottom: 20 }}>
             <Link
               className={styles.socialLinks}
-              href="https://github.com/Prilo-1010"
+              href="#"
             >
               <h3
                 className={styles.text}
@@ -177,7 +177,7 @@ const Main = ({ scroll }: any) => {
             </h3>
             <Link
               className={styles.socialLinks}
-              href="https://www.twitter.com/ProsperLolo"
+              href="#"
             >
               <h3
                 className={styles.text}
