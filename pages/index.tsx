@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Prosper | Home</title>
+        <title>Home</title>
       </Head>
       <motion.div initial={{opacity: 0 }} animate={{opacity: 1}} transition={{duration:1, ease: "easeIn"}}>
         <ScrollContainer>

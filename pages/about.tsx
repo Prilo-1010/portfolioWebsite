@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Prosper | About</title>
+        <title>About</title>
         <meta name="keywords" content="people" />
       </Head>
       <motion.div

@@ -69,7 +69,7 @@ const Work = ({ project }: any) => {
   return (
     <>
       <Head>
-        <title>Prosper | Work</title>
+        <title>Work</title>
         <meta name="keywords" content="people" />
       </Head>
       <motion.div

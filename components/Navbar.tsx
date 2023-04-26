@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import image from "../public/images/Logo.png";
+import image from "../public/john.svg";
 import styles from "../styles/Index.module.css";
 import { BsTwitter, BsInstagram, BsGithub } from "react-icons/bs";
 import { GrLinkedinOption } from "react-icons/gr";

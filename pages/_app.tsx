@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 individuals." />
         </Head>
         <Head>
-      <link rel="shortcut icon" href="/logo2.png" />
+      <link rel="shortcut icon" href="/john.svg" />
     </Head>
       <Layout>
         <Component {...pageProps} />
